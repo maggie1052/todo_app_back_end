@@ -1,13 +1,21 @@
     <center>
         
-   <h1>Class Name</h1>
+   <h1><%= @assignment_subject%></h1>
    
    <ul id="assignment-info">
        <li> Assignment Name</li>
-       <li> Description</li>
-       <li> Due Date</li>
-       
+       <li><%= @assignment_description %></li>
+       <li> <%=@assignment_due_date%></li>
+       <li> <%=@assignment_time_estimte_in_min%></li>
    </ul>
+   
+   <input type="checkbox">Complete
+   
+   <br>
+   
+   <a href= "assignments.html">Edit</a>
+   <a href= assignments.html">Delete</a>
+   <a href= "assignments.html">Go Back</a>
     
    </center>
     
