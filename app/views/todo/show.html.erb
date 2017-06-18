@@ -1,12 +1,11 @@
     <center>
    <h3>Todo #<%= params[:id] %></h3>
-   <h1><%= @assignment_subject%></h1>
+   <h1> Class: <%= @assignment_subject%></h1>
    
    <ul id="assignment-info">
-       <li> Assignment Name</li>
-       <li> <%= @assignment_description %></li>
-       <li> <%=@assignment_due_date%></li>
-       <li> <%=@assignment_time_estimte_in_min%></li>
+       <li> Assignment Name: <%= @assignment_description %></li>
+       <li> Due Date: <%=@assignment_due_date%></li>
+       <li> Time Estimate: <%=@assignment_time_estimte_in_min%></li>
    </ul>
    
    <input type="checkbox">Complete
