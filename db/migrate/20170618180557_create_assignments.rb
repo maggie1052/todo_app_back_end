@@ -3,8 +3,8 @@ class CreateAssignments < ActiveRecord::Migration
     create_table :assignments do |t|
       t.string :description
       t.datetime :due_date
-      t.string :class
-      t.integer :time_estimate_min
+      t.string :subject
+      t.integer :time_estimte_in_min
       t.boolean :is_complete
 
       t.timestamps null: false
