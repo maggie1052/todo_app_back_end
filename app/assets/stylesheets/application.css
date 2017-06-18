@@ -13,29 +13,23 @@
  *= require_tree .
  *= require_self
  */
-  body{
-        background-image: url("http://wallpapercave.com/wp/Lqwt2YM.jpg");
-        background-repeat: no-repeat;
-        background-position: left top;
-        background-size: 1500px 500px;
-        background-color: #DCFEFF;
-    }
-    #welcome{
+
+#welcome{
         color:#021595;
         font-family:fantasy;
         font-size:65px;
     }
-    #log{
+#log{
         color: #3C6249;
         font-size: 50px;
     }
-    #sign{
+#sign{
        color: #3C6249;
         font-size: 50px
     }
-    h2{
+h2{
         color:#14A42C;
     }
-    p{
+p{
         color:#7A7A7A;
     }
