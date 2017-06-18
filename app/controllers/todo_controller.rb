@@ -4,12 +4,25 @@ class TodoController < ApplicationController
     def show
         assignment_id = params[:id]
         
-        if assignment_id =='1'
+        if assignment_id =='1a'
             @assignment_description = "Read Chapter 1"
             @assignment_due_date = 20170619
             @assignment_subject = "AP World"
             @assignment_time_estimte_in_min = 15
             @assignment_is_complete = false
+        elsif assignment_id == '1b'
+            @assignment_description = "1b"
+            @assignment_due_date = 20170620
+            @assignment_subject = "AP World"
+            @assignment_time_estimte_in_min = 60
+            @assignment_is_complete = true
+        elsif assignment_id == '1c'
+            @assignment_description = "1c"
+            @assignment_due_date = 20170620
+            @assignment_subject = "AP World"
+            @assignment_time_estimte_in_min = 60
+            @assignment_is_complete = true
+        
         elsif assignment_id == '2'
             @assignment_description = "Do Project"
             @assignment_due_date = 20170620
@@ -29,10 +42,10 @@ class TodoController < ApplicationController
             @assignment_time_estimte_in_min = 75
             @assignment_is_complete = false
          elsif assignment_id == '5'
-            @assignment_description = ""
-            @assignment_due_date = 
+            @assignment_description = "Exercise"
+            @assignment_due_date = 20170623
             @assignment_subject = "Racket Sports"
-            @assignment_time_estimte_in_min = 
+            @assignment_time_estimte_in_min = 50
             @assignment_is_complete = false
          elsif assignment_id == '6'
             @assignment_description = "Complete Worksheet"
